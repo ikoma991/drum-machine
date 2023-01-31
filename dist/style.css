@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+}
+
+#drum-machine {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#drum-machine #drum-items-container {
+  width: 55vw;
+  height: 70vh;
+  background-color: #BCAAA4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+#drum-machine #drum-items-container > h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #37474F;
+}
+#drum-machine #drum-items-container #display {
+  border-radius: 10px;
+  background-color: #424242;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  width: 85%;
+  margin: auto;
+}
+#drum-machine #drum-items-container #button-container {
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "i i i ";
+}
+#drum-machine #drum-items-container #button-container .drum-pad {
+  border: 0px;
+  padding: 25px;
+  font-size: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: #5D4037;
+  color: white;
+  font-weight: bold;
+}
+#drum-machine #drum-items-container #button-container .drum-pad:hover {
+  filter: brightness(150%);
+}
+#drum-machine #drum-items-container #button-container .drum-pad:active {
+  filter: brightness(100%);
+}
